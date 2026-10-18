@@ -144,22 +144,10 @@
 
             <!-- Stats -->
             <div class="row g-3 my-4">
-              <div class="col-sm-4">
+              <div class="col-sm-6 col-md-5">
                 <div class="about-stat-card">
-                  <div class="about-stat-num">2+</div>
-                  <div class="about-stat-label">Years of Experience</div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="about-stat-card">
-                  <div class="about-stat-num">10+</div>
-                  <div class="about-stat-label">Projects Built</div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="about-stat-card">
-                  <div class="about-stat-num">100%</div>
-                  <div class="about-stat-label">Client Satisfaction</div>
+                  <div class="about-stat-num">1+</div>
+                  <div class="about-stat-label">Year of Experience</div>
                 </div>
               </div>
             </div>
@@ -187,28 +175,38 @@
           <div class="section-divider"></div>
         </div>
 
-        <div class="row g-4">
-          <div v-for="proj in projects" :key="proj.id" class="col-md-6 col-lg-4 reveal">
+        <div class="row g-4 justify-content-center">
+          <div v-for="proj in projects" :key="proj.id" class="col-md-8 col-lg-6 reveal">
             <div class="project-card">
               <div class="project-img-wrap">
                 <img :src="proj.image" :alt="proj.title" loading="lazy">
                 <div class="project-overlay">
-                  <a :href="proj.github" target="_blank" class="project-overlay-btn" v-if="proj.github !== '#'">
+                  <a :href="proj.github" target="_blank" class="project-overlay-btn" v-if="proj.github && proj.github !== '#'">
                     <i class="bi bi-github"></i> Code
                   </a>
-                  <a :href="proj.live" target="_blank" class="project-overlay-btn" v-if="proj.live !== '#'">
+                  <a :href="proj.live" target="_blank" class="project-overlay-btn" v-if="proj.live && proj.live !== '#'">
                     <i class="bi bi-box-arrow-up-right"></i> Demo
                   </a>
-                  <span v-if="proj.github === '#' && proj.live === '#'" class="text-white fw-bold small">
-                    <i class="bi bi-stars"></i> Featured Project
-                  </span>
                 </div>
               </div>
               <div class="project-body">
-                <h5 class="project-title">{{ proj.title }}</h5>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="project-title mb-0">{{ proj.title }}</h5>
+                  <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-2 py-1 small">
+                    <i class="bi bi-check-circle-fill me-1"></i> Live
+                  </span>
+                </div>
                 <p class="project-desc">{{ proj.description }}</p>
                 <div class="project-tags">
                   <span v-for="tag in proj.tags" :key="tag" class="tech-tag">{{ tag }}</span>
+                </div>
+                <div class="project-links mt-3 pt-3 border-top d-flex flex-wrap gap-2">
+                  <a :href="proj.github" target="_blank" class="btn btn-sm btn-outline-dark rounded-pill px-3 py-1" v-if="proj.github && proj.github !== '#'">
+                    <i class="bi bi-github me-1"></i> GitHub Code
+                  </a>
+                  <a :href="proj.live" target="_blank" class="btn-gradient btn-sm px-3 py-1 text-white text-decoration-none" v-if="proj.live && proj.live !== '#'">
+                    <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
+                  </a>
                 </div>
               </div>
             </div>

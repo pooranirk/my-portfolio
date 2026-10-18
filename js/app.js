@@ -27,63 +27,13 @@ createApp({
       projects: [
         {
           id: 1,
-          title: 'ShopVue — E-Commerce App',
-          description: 'A fully responsive e-commerce platform with product filtering, cart management, and smooth checkout flow built with Vue.js 3 and Vuex.',
-          image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&auto=format&fit=crop',
-          tags: ['Vue.js', 'Vuex', 'Bootstrap 5', 'REST API'],
-          github: '#',
-          live: '#',
+          title: 'SkyCast — Modern Weather App',
+          description: 'A responsive, real-time weather forecast application built with Vue.js 3 and Vite. Fetches live meteorological data with dynamic weather conditions, temperature metrics, humidity, wind stats, and sleek glassmorphic UI.',
+          image: 'assets/weather-app.jpg',
+          tags: ['Vue.js 3', 'Vite', 'REST API', 'JavaScript', 'CSS3'],
+          github: 'https://github.com/pooranirk/weather',
+          live: 'https://pooranirk.github.io/weather/',
           featured: true,
-        },
-        {
-          id: 2,
-          title: 'TaskFlow — Project Manager',
-          description: 'A drag-and-drop Kanban board app for managing projects and tasks. Features real-time updates, priority labels, and deadline tracking.',
-          image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&auto=format&fit=crop',
-          tags: ['React.js', 'CSS3', 'LocalStorage', 'DnD'],
-          github: '#',
-          live: '#',
-          featured: false,
-        },
-        {
-          id: 3,
-          title: 'WeatherSphere — Weather App',
-          description: 'A beautiful weather dashboard that fetches real-time weather data via API, featuring animated weather icons and 7-day forecasts.',
-          image: 'https://images.unsplash.com/photo-1504608524841-42584120d833?w=600&auto=format&fit=crop',
-          tags: ['JavaScript', 'OpenWeather API', 'CSS Animations'],
-          github: '#',
-          live: '#',
-          featured: false,
-        },
-        {
-          id: 4,
-          title: 'BlogMind — Content Platform',
-          description: 'A modern blogging platform with rich-text editor, category filtering, author profiles, and dark/light mode toggle.',
-          image: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=600&auto=format&fit=crop',
-          tags: ['Vue.js', 'Firebase', 'Quill Editor'],
-          github: '#',
-          live: '#',
-          featured: false,
-        },
-        {
-          id: 5,
-          title: 'FinTrack — Budget Tracker',
-          description: 'A personal finance dashboard with animated charts, expense categorization, and monthly summaries to help manage spending.',
-          image: 'https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=600&auto=format&fit=crop',
-          tags: ['React.js', 'Chart.js', 'Tailwind CSS'],
-          github: '#',
-          live: '#',
-          featured: false,
-        },
-        {
-          id: 6,
-          title: 'ConnectMe — Social UI',
-          description: 'A social media interface concept with animated feeds, story components, real-time-like interactions, and a profile builder.',
-          image: 'https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=600&auto=format&fit=crop',
-          tags: ['Vue.js', 'Bootstrap 5', 'GSAP'],
-          github: '#',
-          live: '#',
-          featured: false,
         },
       ],
 
@@ -140,7 +90,7 @@ createApp({
         {
           title: 'Frontend Developer',
           org: 'Self-employed / Freelance',
-          date: 'Aug 2024 — Jun 2026',
+          date: 'Aug 2024 — Present (1+ Year)',
           desc: 'Building modern, responsive web applications using HTML, CSS, JavaScript, and Vue.js. Passionate about clean UI and great user experiences.',
         },
       ],
@@ -317,7 +267,7 @@ createApp({
         `Email: poorani@email.com | GitHub: github.com/poorani | LinkedIn: linkedin.com/in/poorani\n\n` +
         `SKILLS\n------\nHTML5, CSS3, JavaScript (ES6+), Vue.js 3, React.js, Bootstrap 5, REST APIs, Git/GitHub, Figma\n\n` +
         `EDUCATION\n---------\nB.Sc Physics\nSadakathullah Appa College\n\n` +
-        `EXPERIENCE\n----------\nFrontend Developer | Aug 2024 – Jun 2026\n` +
+        `EXPERIENCE\n----------\nFrontend Developer | Aug 2024 – Present (1+ Year)\n` +
         `• Built modern, responsive web applications using HTML, CSS, JavaScript, and Vue.js\n\n` +
         `Data Entry Operator | Handloom Society | Aug 2020 – Nov 2022\n` +
         `• Handled large-scale data entry, ensuring accuracy and integrity of records\n\n` +
@@ -325,9 +275,7 @@ createApp({
         `• Performed high-speed and accurate data typing assignments\n\n` +
         `Assistant Office Admin & DTP | Sri Jayendra Swamigal Vidhya Kendra | May 2017 – May 2019\n` +
         `• Managed office administration and desktop publishing work\n\n` +
-        `PROJECTS\n--------\n• ShopVue — E-Commerce App (Vue.js, Vuex, Bootstrap 5)\n` +
-        `• TaskFlow — Kanban Board (React.js, CSS3)\n` +
-        `• WeatherSphere — Weather Dashboard (JS, OpenWeather API)\n`;
+        `PROJECTS\n--------\n• SkyCast — Modern Weather App (Vue.js 3, Vite, REST API)\n  Live Demo: https://pooranirk.github.io/weather/\n  GitHub: https://github.com/pooranirk/weather\n`;
 
       const blob = new Blob([content], { type: 'text/plain' });
       const link = document.createElement('a');
