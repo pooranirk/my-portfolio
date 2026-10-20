@@ -831,6 +831,9 @@ footer {
   transform: translateX(-50%) translateY(0);
   opacity: 1;
 }
+.toast-success.toast-error {
+  background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
+}
 
 /* ============================================================
    RESPONSIVE
