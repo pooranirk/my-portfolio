@@ -312,7 +312,7 @@ createApp({
     downloadResume() {
       // Creates a simple text resume for download
       const content = `POORANI — Frontend Developer\n\n` +
-        `Email: poorani@email.com | GitHub: github.com/poorani | LinkedIn: linkedin.com/in/poorani\n\n` +
+        `Email: pooranism97@gmail.com | GitHub: github.com/pooranirk\n\n` +
         `SKILLS\n------\nHTML5, CSS3, JavaScript (ES6+), Vue.js 3, React.js (Basic), REST APIs, Git/GitHub, Figma\n\n` +
         `EDUCATION\n---------\nB.Sc Physics\nSadakathullah Appa College\n\n` +
         `EXPERIENCE\n----------\nFrontend Developer | Senzr | Aug 2024 – Present (1+ Year)\n` +
