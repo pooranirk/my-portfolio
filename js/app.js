@@ -35,6 +35,16 @@ createApp({
           live: 'https://pooranirk.github.io/weather/',
           featured: true,
         },
+        {
+          id: 2,
+          title: 'Tailoring Website',
+          description: 'A clean and elegant tailoring business website showcasing services, portfolio, and contact details. Designed with a modern layout to attract and engage customers looking for professional stitching and clothing alterations.',
+          image: 'assets/priya stitchique photo.png',
+          tags: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design'],
+          github: 'https://github.com/pooranirk/tailoring_website',
+          live: 'https://pooranirk.github.io/tailoring_website/',
+          featured: true,
+        },
       ],
 
       // ---------- Skills ----------
